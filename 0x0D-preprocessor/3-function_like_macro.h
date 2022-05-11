@@ -1,6 +1,6 @@
-#ifndef SUM_H_
-#define SUM_H_
+#ifndef ABSOLUTE_VALUE
+#define ABSOLUTE_VALUE
 
-#define SUM(x, y) ((x) + (y))
+#define ABS(x) ((x) < 0 ? -(x) : (x))
 
-#endif /* SUM_H_ */
+#endif
