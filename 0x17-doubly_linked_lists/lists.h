@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdlib.h>
 
@@ -10,7 +10,6 @@
  * @next: points to the next node
  *
  * Description: doubly linked list node structure
- * for Holberton project
  */
 typedef struct dlistint_s
 {
