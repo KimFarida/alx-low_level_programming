@@ -18,7 +18,7 @@ int main(void)
 	while (i <= 98)
 	{
 		sum = a + b; /* Fibonacci number as the sum of the previous two numbers */
-		printf("%u", sum);
+		printf("%lu", sum);
 		if (i != 98)
 		{
 			printf(", ");
