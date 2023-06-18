@@ -17,26 +17,26 @@ void times_table(void)
 			answer = i * k;
 			if (j == 0) /* If it's the first column */
 			{
-				printf("0"); /* Print "0" as the first element */
+				_putchar('0'); /* Print "0" as the first element */
 			}
 	
-			printf(" "); /* Print a space before each element */
+			_putchar(' '); /* Print a space before each element */
 	
 	
 			if (answer <= 9) /* If the answer is a single digit */
 			{
-				printf(" "); /* Print an additional space for alignment */
+				_putchar(' '); /* Print an additional space for alignment */
 			}
 	
-			printf("%d", answer);
+			_putchar('0' + answer);
 	
 			if (j != 9) /* If it's not the last column */
 			{
-				printf(","); /* Print a comma to separate elements */
+				_putchar(','); /* Print a comma to separate elements */
 	
 			}
 			k++;
 		}
-		printf("\n"); /* Move to the next line for a new row */
+		_putchar('\n'); /* Move to the next line for a new row */
 	}
 }
