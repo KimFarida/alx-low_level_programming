@@ -42,6 +42,7 @@ void times_table(void)
 			}
 			k++;
 		}
-		_putchar('\n'); /* Move to the next line for a new row */
+		if(i != 9)
+			_putchar('\n'); /* Move to the next line for a new row */
 	}
 }
