@@ -27,4 +27,5 @@ int main(void)
 	}
 	printf("%ld", even_sum);
 	printf("\n");
+	return (0);
 }
