@@ -16,7 +16,7 @@ int main(void)
 	int i = 0;
 	long sum = 0;
 
-	while (i <= 50)
+	while (i < 50)
 	{
 		sum = a + b; /* Fibonacci number as the sum of the previous two numbers */
 		printf("%ld", sum);
