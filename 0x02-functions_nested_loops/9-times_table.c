@@ -16,8 +16,8 @@ void times_table(void)
 		{
 			answer = i * k;
 
-	
-			_putchar(' '); /* Print a space before each element */
+			if(answer != 0)
+				_putchar(' '); /* Print a space before each element */
 	
 	
 			if (answer <= 9) /* If the answer is a single digit */
