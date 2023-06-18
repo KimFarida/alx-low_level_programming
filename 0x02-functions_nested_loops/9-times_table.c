@@ -7,40 +7,36 @@
 
 void times_table(void)
 {
-
-int a = 0;
-int b;
-int rep;
-while (a <= 9)
-{
-	b = 0;
-	while (b <= 9)
+	int i, j, k, answer;
+	
+	for (i = 0; i <= 9; i++) /* Outer loop for rows */
 	{
-		rep = a * b;
-		if (b == 0)
+		answer = k = 0;
+		for (j = 0; j <= 9; j++) /*Loop acts as a counter*/
 		{
-			_putchar('0' + rep);
+			answer = i * k;
+			if (j == 0) /* If it's the first column */
+			{
+				printf("0"); /* Print "0" as the first element */
+			}
+	
+			printf(" "); /* Print a space before each element */
+	
+	
+			if (answer <= 9) /* If the answer is a single digit */
+			{
+				printf(" "); /* Print an additional space for alignment */
+			}
+	
+			printf("%d", answer);
+	
+			if (j != 9) /* If it's not the last column */
+			{
+				printf(","); /* Print a comma to separate elements */
+	
+			}
+			k++;
 		}
-		else if (rep < 10)
-		{
-			_putchar(' ');
-			_putchar('0' + rep);
-		}
-		else
-		{
-			_putchar('0' + rep / 10);
-			_putchar('0' + rep % 10);
-		}
-
-		if (b < 9)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		b++;
+		printf("\n"); /* Move to the next line for a new row */
 	}
-	_putchar('\n');
-	a++;
-}
-
 }
