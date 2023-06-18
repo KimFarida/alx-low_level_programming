@@ -21,7 +21,7 @@ void times_table(void)
 				_putchar(' '); /* Print a space before each element */
 	
 	
-			if (answer < 10) /* If the answer is a single digit */
+			if (answer <= 10) /* If the answer is a single digit */
 			{
 				_putchar(' '); /* Print an additional space for alignment */
 				_putchar('0' + answer);
