@@ -44,5 +44,6 @@ void times_table(void)
 		}
 		if(i != 9)
 			_putchar('\n'); /* Move to the next line for a new row */
+			_putchar('\0'); /* Add an extra null character */
 	}
 }
