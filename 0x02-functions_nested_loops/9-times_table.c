@@ -11,7 +11,8 @@ void times_table(void)
 	
 	for (i = 0; i <= 9; i++) /* Outer loop for rows */
 	{
-		answer = k = 0;
+		answer = 0
+		k = 1;
 		for (j = 0; j <= 9; j++) /*Loop acts as a counter*/
 		{
 			answer = i * k;
@@ -20,7 +21,7 @@ void times_table(void)
 				_putchar(' '); /* Print a space before each element */
 	
 	
-			if (answer <= 9) /* If the answer is a single digit */
+			if (answer < 10) /* If the answer is a single digit */
 			{
 				_putchar(' '); /* Print an additional space for alignment */
 				_putchar('0' + answer);
