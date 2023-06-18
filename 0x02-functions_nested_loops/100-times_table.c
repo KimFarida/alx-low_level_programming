@@ -15,9 +15,7 @@ void print_times_table(int n)
 
 	for (i = 0; i <= n; i++)
 		{
-		j = 0;
-		printf("%d,", j);
-		for (j = 1; j <= n; j++)
+		for (j = 0; j <= n; j++)
 		{
 			k = i * j;
 			if (k <= 9 && j != 0)
@@ -29,7 +27,8 @@ void print_times_table(int n)
 			{
 				printf(" ");
 			}
-			printf(" ");
+			if(j != 0)
+				printf(" ");
 			printf("%d", k);
 			if (j != n)
 			{
