@@ -1,23 +1,30 @@
 #include <stdio.h>
-/**
- * main - main block
- * Description: computes and prints even  number < 4,000,000
- * 5 below 1024 (excluded), followed by a new line
- * Return: 0
- */
+/*
+* By considering the terms in the Fibonacci sequence
+* whose values do not exceed 4,000,000,
+* write a program that finds and prints the sum of the even-valued terms,
+* followed by a new line.
+*/
+
 int main(void)
 {
-	int a = 0, b = 1, next = 0;
-	int sum = 0;
+	long a, b, i, sum, even_sum;
 
-	while (next < 4000000)
+	a = 0;
+	b = 1;
+	i = sum = even_sum = 0;
+
+	while (i < 4000000)
 	{
-		next = a + b;
+		sum = a + b;
+		if (sum % 2 == 0)
+		{
+			even_sum += sum;
+		}
 		a = b;
-		b = next;
-		if (next % 2 == 0)
-			sum += next;
+		b = sum;
+		i = sum;
 	}
-	printf("%i\n", sum);
-	return (0);
+	printf("%ld", even_sum);
+	printf("\n");
 }
