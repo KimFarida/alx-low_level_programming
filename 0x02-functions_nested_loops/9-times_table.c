@@ -16,7 +16,7 @@ void times_table(void)
 		{
 			answer = i * k;
 
-			if(answer != 0)
+			if(j != 0)
 				_putchar(' '); /* Print a space before each element */
 	
 	
