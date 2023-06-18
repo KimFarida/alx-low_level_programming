@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
 * main - entry point
 * Description: By considering the terms in the Fibonacci sequence
 * whose values do not exceed 4,000,000,
