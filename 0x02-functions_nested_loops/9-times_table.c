@@ -26,9 +26,16 @@ void times_table(void)
 			if (answer <= 9) /* If the answer is a single digit */
 			{
 				_putchar(' '); /* Print an additional space for alignment */
+				_putchar('0' + answer);
 			}
-	
-			_putchar('0' + answer);
+			else
+			{
+				_putchar('0' + answer / 10 );
+				_putchar('0' + answer % 10 );
+				
+			}
+			
+			
 	
 			if (j != 9) /* If it's not the last column */
 			{
