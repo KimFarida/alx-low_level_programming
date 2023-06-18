@@ -12,7 +12,7 @@ void times_table(void)
 	for (i = 0; i <= 9; i++) /* Outer loop for rows */
 	{
 		answer = 0;
-		k = 1;
+		k = 0;
 		for (j = 0; j <= 9; j++) /*Loop acts as a counter*/
 		{
 			answer = i * k;
