@@ -9,11 +9,11 @@
 
 int main(void)
 {
-	unsigned long a = 0; /* First Fibonacci number */
-	unsigned long b = 1; /*  Second Fibonacci number */
+	unsigned long int a = 0; /* First Fibonacci number */
+	unsigned long int b = 1; /*  Second Fibonacci number */
 
 	int i = 0;
-	unsigned long sum = 0;
+	unsigned long int sum = 0;
 
 	while (i <= 98)
 	{
@@ -30,3 +30,4 @@ int main(void)
 	printf("\n");
 	return (0);
 }
+
