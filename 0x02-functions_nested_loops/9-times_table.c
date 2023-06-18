@@ -24,12 +24,12 @@ void times_table(void)
 			if (answer <= 9) /* If the answer is a single digit */
 			{
 				_putchar(' '); /* Print an additional space for alignment */
-				_putchar('0' + answer);
+				_putchar(answer + '0');
 			}
 			else
 			{
-				_putchar('0' + answer / 10 );
-				_putchar('0' + answer % 10 );
+				_putchar((answer / 10) + '0');
+				_putchar((answer % 10) + '0');
 				
 			}
 			
