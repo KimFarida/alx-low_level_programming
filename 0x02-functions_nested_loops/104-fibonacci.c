@@ -15,11 +15,11 @@ int main(void)
 	int i = 0;
 	unsigned long int sum = 0;
 
-	while (i <= 98)
+	while (i < 98)
 	{
 		sum = a + b; /* Fibonacci number as the sum of the previous two numbers */
 		printf("%lu", sum);
-		if (i != 98)
+		if (i != 97)
 		{
 			printf(", ");
 		}
