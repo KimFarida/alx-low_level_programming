@@ -20,7 +20,7 @@ int main(void)
 	{
 		sum = a + b; /* Fibonacci number as the sum of the previous two numbers */
 		printf("%ld", sum);
-		if (i != 50)
+		if (i != 49)
 		{
 			printf(", ");
 		}
@@ -29,5 +29,5 @@ int main(void)
 		i++;
 	}
 	printf("\n");
-	return(0);
+	return (0);
 }
