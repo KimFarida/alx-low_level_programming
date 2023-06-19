@@ -13,7 +13,7 @@ int main(void)
 	unsigned long b = 1; /*  Second Fibonacci number */
 
 	int i = 0;
-	unsigned long int sum = 0;
+	unsigned long sum = 0;
 
 	while (i < 98)
 	{
